@@ -1,0 +1,201 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.gdelataillade.alarm.alarm_example"
+4    android:versionCode="1"
+5    android:versionName="0.1.2" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/lenovo/Documents/flutter_small_app/alarm/example/android/app/src/debug/AndroidManifest.xml:7:5-66
+15-->/home/lenovo/Documents/flutter_small_app/alarm/example/android/app/src/debug/AndroidManifest.xml:7:22-64
+16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+16-->/home/lenovo/Documents/flutter_small_app/alarm/example/android/app/src/main/AndroidManifest.xml:3:4-79
+16-->/home/lenovo/Documents/flutter_small_app/alarm/example/android/app/src/main/AndroidManifest.xml:3:21-77
+17    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- For apps with targetSDK=31 (Android 12) -->
+17-->/home/lenovo/Documents/flutter_small_app/alarm/example/android/app/src/main/AndroidManifest.xml:4:4-66
+17-->/home/lenovo/Documents/flutter_small_app/alarm/example/android/app/src/main/AndroidManifest.xml:4:21-64
+18    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+18-->/home/lenovo/Documents/flutter_small_app/alarm/example/android/app/src/main/AndroidManifest.xml:6:4-77
+18-->/home/lenovo/Documents/flutter_small_app/alarm/example/android/app/src/main/AndroidManifest.xml:6:21-75
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->[:alarm] /home/lenovo/Documents/flutter_small_app/alarm/example/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-66
+19-->[:alarm] /home/lenovo/Documents/flutter_small_app/alarm/example/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-63
+20    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+20-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+20-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+21    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+21-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+21-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
+22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+22-->[com.google.android.exoplayer:exoplayer-core:2.18.1] /home/lenovo/.gradle/caches/transforms-3/f7ee3094868f6d81001ffdbe2e84cf51/transformed/jetified-exoplayer-core-2.18.1/AndroidManifest.xml:24:5-79
+22-->[com.google.android.exoplayer:exoplayer-core:2.18.1] /home/lenovo/.gradle/caches/transforms-3/f7ee3094868f6d81001ffdbe2e84cf51/transformed/jetified-exoplayer-core-2.18.1/AndroidManifest.xml:24:22-76
+23
+24    <queries>
+24-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:24:5-34:15
+25        <intent>
+25-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:25:9-27:18
+26            <action android:name="android.media.browse.MediaBrowserService" />
+26-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:26:13-79
+26-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:26:21-76
+27        </intent>
+28        <intent>
+28-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:28:9-30:18
+29            <action android:name="androidx.media2.session.MediaSessionService" />
+29-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:29:13-82
+29-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:29:21-79
+30        </intent>
+31        <intent>
+31-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:31:9-33:18
+32            <action android:name="androidx.media2.session.MediaLibraryService" />
+32-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:32:13-82
+32-->[androidx.media2:media2-session:1.2.0] /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/AndroidManifest.xml:32:21-79
+33        </intent>
+34    </queries>
+35
+36    <permission
+36-->[androidx.core:core:1.9.0] /home/lenovo/.gradle/caches/transforms-3/5688d69b98a5e6d247bf260656027d93/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+37        android:name="com.gdelataillade.alarm.alarm_example.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+37-->[androidx.core:core:1.9.0] /home/lenovo/.gradle/caches/transforms-3/5688d69b98a5e6d247bf260656027d93/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+38        android:protectionLevel="signature" />
+38-->[androidx.core:core:1.9.0] /home/lenovo/.gradle/caches/transforms-3/5688d69b98a5e6d247bf260656027d93/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+39
+40    <uses-permission android:name="com.gdelataillade.alarm.alarm_example.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+40-->[androidx.core:core:1.9.0] /home/lenovo/.gradle/caches/transforms-3/5688d69b98a5e6d247bf260656027d93/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+40-->[androidx.core:core:1.9.0] /home/lenovo/.gradle/caches/transforms-3/5688d69b98a5e6d247bf260656027d93/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+41
+42    <application
+43        android:name="io.flutter.app.FlutterMultiDexApplication"
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.9.0] /home/lenovo/.gradle/caches/transforms-3/5688d69b98a5e6d247bf260656027d93/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+45        android:debuggable="true"
+46        android:icon="@mipmap/ic_launcher"
+47        android:label="alarm_example" >
+48        <service
+49            android:name="dev.fluttercommunity.plus.androidalarmmanager.AlarmService"
+50            android:exported="false"
+51            android:permission="android.permission.BIND_JOB_SERVICE" />
+52
+53        <receiver
+54            android:name="dev.fluttercommunity.plus.androidalarmmanager.AlarmBroadcastReceiver"
+55            android:exported="false" />
+56        <receiver
+57            android:name="dev.fluttercommunity.plus.androidalarmmanager.RebootBroadcastReceiver"
+58            android:enabled="false"
+59            android:exported="false" >
+60            <intent-filter>
+61                <action android:name="android.intent.action.BOOT_COMPLETED" />
+61-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+61-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+62            </intent-filter>
+63        </receiver>
+64
+65        <activity
+66            android:name="com.gdelataillade.alarm.alarm_example.MainActivity"
+67            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+68            android:exported="true"
+69            android:hardwareAccelerated="true"
+70            android:launchMode="singleTop"
+71            android:theme="@style/LaunchTheme"
+72            android:windowSoftInputMode="adjustResize" >
+73
+74            <!--
+75                 Specifies an Android theme to apply to this Activity as soon as
+76                 the Android process has started. This theme is visible to the user
+77                 while the Flutter UI initializes. After that, this theme continues
+78                 to determine the Window background behind the Flutter UI.
+79            -->
+80            <meta-data
+81                android:name="io.flutter.embedding.android.NormalTheme"
+82                android:resource="@style/NormalTheme" />
+83
+84            <intent-filter>
+85                <action android:name="android.intent.action.MAIN" />
+86
+87                <category android:name="android.intent.category.LAUNCHER" />
+88            </intent-filter>
+89        </activity>
+90        <!--
+91             Don't delete the meta-data below.
+92             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+93        -->
+94        <meta-data
+95            android:name="flutterEmbedding"
+96            android:value="2" />
+97
+98        <service
+98-->[:alarm] /home/lenovo/Documents/flutter_small_app/alarm/example/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:40
+99            android:name="com.gdelataillade.alarm.alarm.NotificationOnKillService"
+99-->[:alarm] /home/lenovo/Documents/flutter_small_app/alarm/example/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-83
+100            android:enabled="true"
+100-->[:alarm] /home/lenovo/Documents/flutter_small_app/alarm/example/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-35
+101            android:exported="false" />
+101-->[:alarm] /home/lenovo/Documents/flutter_small_app/alarm/example/build/alarm/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+102
+103        <receiver
+103-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+104            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+104-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
+105            android:exported="false" />
+105-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+106        <receiver
+106-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+107            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+107-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
+108            android:exported="false" />
+108-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+109        <receiver
+109-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
+110            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+110-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
+111            android:exported="false" >
+111-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+112            <intent-filter>
+112-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
+113                <action android:name="android.intent.action.BOOT_COMPLETED" />
+113-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+113-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+114                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+114-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
+114-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+115                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+115-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+115-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+116                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+116-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+116-->[:flutter_local_notifications] /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+117            </intent-filter>
+118        </receiver>
+119
+120        <uses-library
+120-->[androidx.window:window:1.0.0-beta04] /home/lenovo/.gradle/caches/transforms-3/66cf4e3ddef4fa70527a905bbea4ea8e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+121            android:name="androidx.window.extensions"
+121-->[androidx.window:window:1.0.0-beta04] /home/lenovo/.gradle/caches/transforms-3/66cf4e3ddef4fa70527a905bbea4ea8e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+122            android:required="false" />
+122-->[androidx.window:window:1.0.0-beta04] /home/lenovo/.gradle/caches/transforms-3/66cf4e3ddef4fa70527a905bbea4ea8e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+123        <uses-library
+123-->[androidx.window:window:1.0.0-beta04] /home/lenovo/.gradle/caches/transforms-3/66cf4e3ddef4fa70527a905bbea4ea8e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+124            android:name="androidx.window.sidecar"
+124-->[androidx.window:window:1.0.0-beta04] /home/lenovo/.gradle/caches/transforms-3/66cf4e3ddef4fa70527a905bbea4ea8e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+125            android:required="false" />
+125-->[androidx.window:window:1.0.0-beta04] /home/lenovo/.gradle/caches/transforms-3/66cf4e3ddef4fa70527a905bbea4ea8e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+126
+127        <provider
+127-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/lenovo/.gradle/caches/transforms-3/8f892832121cff99792d196cec33a32d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+128            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+128-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/lenovo/.gradle/caches/transforms-3/8f892832121cff99792d196cec33a32d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+129            android:authorities="com.gdelataillade.alarm.alarm_example.lifecycle-process"
+129-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/lenovo/.gradle/caches/transforms-3/8f892832121cff99792d196cec33a32d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+130            android:exported="false"
+130-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/lenovo/.gradle/caches/transforms-3/8f892832121cff99792d196cec33a32d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+131            android:multiprocess="true" />
+131-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/lenovo/.gradle/caches/transforms-3/8f892832121cff99792d196cec33a32d/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+132    </application>
+133
+134</manifest>

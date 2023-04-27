@@ -1,0 +1,7 @@
+#Thu Apr 27 12:49:12 IST 2023
+base.0=/home/lenovo/Documents/flutter_small_app/alarm/example/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+base.1=/home/lenovo/Documents/flutter_small_app/alarm/example/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+path.0=classes.dex
+path.1=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

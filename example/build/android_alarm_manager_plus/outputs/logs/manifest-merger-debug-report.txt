@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml:1:1-69
+INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml:1:1-69
+INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml:1:1-69
+	package
+		ADDED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml:1:11-66
+		INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml:1:1-69
+uses-sdk
+INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+		ADDED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+		ADDED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
+		INJECTED from /home/lenovo/.pub-cache/hosted/pub.dev/android_alarm_manager_plus-2.1.1/android/src/main/AndroidManifest.xml
