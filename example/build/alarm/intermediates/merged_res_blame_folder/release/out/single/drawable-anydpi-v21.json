@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.gdelataillade.alarm.alarm-merged_res-20:/drawable-anydpi-v21/media_session_service_notification_ic_skip_to_previous.xml",
+        "source": "com.gdelataillade.alarm.alarm-jetified-media2-session-1.2.0-6:/drawable-anydpi-v21/media_session_service_notification_ic_skip_to_previous.xml"
+    },
+    {
+        "merged": "com.gdelataillade.alarm.alarm-merged_res-20:/drawable-anydpi-v21/media_session_service_notification_ic_pause.xml",
+        "source": "com.gdelataillade.alarm.alarm-jetified-media2-session-1.2.0-6:/drawable-anydpi-v21/media_session_service_notification_ic_pause.xml"
+    },
+    {
+        "merged": "com.gdelataillade.alarm.alarm-merged_res-20:/drawable-anydpi-v21/media_session_service_notification_ic_music_note.xml",
+        "source": "com.gdelataillade.alarm.alarm-jetified-media2-session-1.2.0-6:/drawable-anydpi-v21/media_session_service_notification_ic_music_note.xml"
+    },
+    {
+        "merged": "com.gdelataillade.alarm.alarm-merged_res-20:/drawable-anydpi-v21/media_session_service_notification_ic_play.xml",
+        "source": "com.gdelataillade.alarm.alarm-jetified-media2-session-1.2.0-6:/drawable-anydpi-v21/media_session_service_notification_ic_play.xml"
+    },
+    {
+        "merged": "com.gdelataillade.alarm.alarm-merged_res-20:/drawable-anydpi-v21/media_session_service_notification_ic_skip_to_next.xml",
+        "source": "com.gdelataillade.alarm.alarm-jetified-media2-session-1.2.0-6:/drawable-anydpi-v21/media_session_service_notification_ic_skip_to_next.xml"
+    }
+]

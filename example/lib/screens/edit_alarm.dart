@@ -1,4 +1,8 @@
 import 'dart:convert';
+import 'package:alarm/service/storage.dart';
+import 'package:alarm_example/provider.dart/provider.dart';
+import 'package:audioplayers/audioplayers.dart';
+import 'package:provider/provider.dart';
 
 import 'package:alarm/alarm.dart';
 import 'package:flutter/material.dart';
@@ -23,15 +27,33 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
   late bool loopAudio;
   late bool vibrate;
   late bool showNotification;
-  ValueNotifier<String> assetAudio = ValueNotifier('');
+
+  TextEditingController _controller = TextEditingController();
+  late String assetAudio;
   late List<String> alarmFileName;
   late List<String> alarmFilePath;
-  String alarmTitle = ' ';
-  TextEditingController _controller = TextEditingController();
+  final player = AudioPlayer();
+
+  Future<void> playAudio(alarmTonePath) async {
+    await player.play(AssetSource(alarmTonePath));
+  }
+
+  Future<void> stopAudio() async {
+    await player.stop();
+  }
 
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      Provider.of<AlarmProvider>(context, listen: false)
+          .updateSelectedPath('assets/alarm_tone/Auratone.mp3');
+    });
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      Provider.of<AlarmProvider>(context, listen: false)
+          .updateSelectedValue('Auratone');
+    });
+
     creating = widget.alarmSettings == null;
 
     if (creating) {
@@ -43,7 +65,7 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
       loopAudio = true;
       vibrate = true;
       showNotification = true;
-      assetAudio.value = 'assets/alarm_tone/mozart.mp3';
+      assetAudio = Provider.of<AlarmProvider>(context, listen: false).alarmPath;
     } else {
       selectedTime = TimeOfDay(
         hour: widget.alarmSettings!.dateTime.hour,
@@ -57,14 +79,11 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
           widget.alarmSettings!.notificationTitle!.isNotEmpty &&
           widget.alarmSettings!.notificationBody != null &&
           widget.alarmSettings!.notificationBody!.isNotEmpty;
-      assetAudio.value = widget.alarmSettings!.assetAudioPath;
+      assetAudio = Provider.of<AlarmProvider>(context, listen: false).alarmPath;
     }
     getAlarmFromAsset();
-    setState(() {
-      assetAudio;
-    });
   }
-  
+
   getAlarmFromAsset() async {
     alarmFilePath = await getAssetFiles('assets/alarm_tone/');
     alarmFileName = alarmFilePath
@@ -82,15 +101,14 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
 
   Future<List<String>> getAssetFiles(String path) async {
     List<String> assetFiles = [];
-
     final directory = await rootBundle.loadString('AssetManifest.json');
     final Map<String, dynamic> assetsMap = json.decode(directory);
 
-    assetsMap.keys.forEach((String key) {
+    for (var key in assetsMap.keys) {
       if (key.startsWith(path)) {
         assetFiles.add(key);
       }
-    });
+    }
 
     return assetFiles;
   }
@@ -113,6 +131,7 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
     if (dateTime.isBefore(DateTime.now())) {
       dateTime = dateTime.add(const Duration(days: 1));
     }
+
     final alarmSettings = AlarmSettings(
         id: id,
         dateTime: dateTime,
@@ -122,8 +141,11 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
         notificationBody: showNotification
             ? 'Your alarm for ${_controller.text} is ringing'
             : null,
-        assetAudioPath: assetAudio.value,
+        assetAudioPath:
+            Provider.of<AlarmProvider>(context, listen: false).alarmPath,
         enableNotificationOnKill: true);
+    AlarmStorage.saveAlarm(alarmSettings);
+    AlarmStorage.getSavedAlarms();
     return alarmSettings;
   }
 
@@ -136,66 +158,6 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
     Alarm.stop(widget.alarmSettings!.id)
         .then((_) => Navigator.pop(context, true));
   }
-
-  Future<String> al() async {
-    await showModalBottomSheet<bool?>(
-        context: context,
-        isScrollControlled: true,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30.0),
-        ),
-        builder: (context) {
-          return StatefulBuilder(
-            builder: (context, setState) => FractionallySizedBox(
-              heightFactor: 0.65,
-              child: Column(
-                children: [
-                  ElevatedButton(onPressed: () => Navigator.pop(context), child: Text('ffff')),
-                  Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: Text(
-                      'Selected Value: ${assetAudio.value}',
-                      style: TextStyle(fontSize: 24.0),
-                    ),
-                  ),
-                  Expanded(
-                    child: ListView.builder(
-                      itemCount: alarmFileName.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        return RadioListTile(
-                          value: alarmFileName[index],
-                          groupValue: assetAudio.value,
-                          onChanged: (newValue) {
-                            setState(() {
-                              assetAudio.value = newValue!;
-                            });
-                          },
-                          title: Text(alarmFileName[index]),
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          );
-        });
-    return assetAudio.value;
-  }
-
-  List<String> alarmToneName = [
-    'Auratone',
-    'Bells_2',
-    'Bells',
-    'Daybreak',
-    'Deep Breath',
-    'Early Day',
-    'Early Riser',
-    'Frequency',
-    'Freshstart',
-    'Happy Day',
-    'Happyday',
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -282,11 +244,7 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
               ),
               IconButton(
                   onPressed: () {
-                    final a = al();
-                    print(a);
-                    setState(() {
-                      assetAudio;
-                    });
+                    alarmToneList();
                   },
                   icon: const Icon(Icons.arrow_forward_ios))
             ],
@@ -294,7 +252,7 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
           Align(
             alignment: Alignment.topLeft,
             child: Text(
-              assetAudio.value,
+              Provider.of<AlarmProvider>(context).alarmTone,
               style: Theme.of(context).textTheme.bodySmall,
             ),
           ),
@@ -329,7 +287,7 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 25, vertical: 15),
                   ),
-                  onPressed: () => saveAlarm(),
+                  onPressed: saveAlarm,
                   icon: const Icon(Icons.alarm),
                   label: const Text(
                     'Save',
@@ -342,5 +300,70 @@ class _ExampleAlarmEditScreenState extends State<ExampleAlarmEditScreen> {
         ],
       ),
     );
+  }
+
+  alarmToneList() async {
+    await showModalBottomSheet<bool?>(
+        context: context,
+        isScrollControlled: true,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(30.0),
+        ),
+        builder: (context) {
+          return Consumer<AlarmProvider>(
+            builder: (context, value, child) => FractionallySizedBox(
+              heightFactor: 0.65,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Default Value ${value.alarmTone}',
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelLarge
+                              ?.copyWith(color: Colors.blueAccent),
+                        ),
+                        TextButton(
+                          onPressed: () => Navigator.pop(context),
+                          child: Text(
+                            'Done',
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(color: Colors.blueAccent),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemCount: alarmFileName.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        return RadioListTile(
+                          value: alarmFileName[index],
+                          groupValue: value.alarmTone,
+                          onChanged: (newValue) {
+                            stopAudio();
+                            value.updateSelectedValue(newValue!);
+                            playAudio(
+                                alarmFilePath[index].replaceAll('assets/', ''));
+                            value.updateSelectedPath(alarmFilePath[index]);
+                          },
+                          title: Text(alarmFileName[index]),
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          );
+        }).then((value) => stopAudio());
   }
 }

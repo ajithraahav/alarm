@@ -1,0 +1,12 @@
+com.ajinasokan.flutter_fgbg-jetified-window-java-1.0.0-beta04-0 /home/lenovo/.gradle/caches/transforms-3/13f4ba9073ad3955f6b389f198634c22/transformed/jetified-window-java-1.0.0-beta04/res
+com.ajinasokan.flutter_fgbg-jetified-window-1.0.0-beta04-1 /home/lenovo/.gradle/caches/transforms-3/66cf4e3ddef4fa70527a905bbea4ea8e/transformed/jetified-window-1.0.0-beta04/res
+com.ajinasokan.flutter_fgbg-jetified-annotation-experimental-1.1.0-2 /home/lenovo/.gradle/caches/transforms-3/8e85f8df9ffbe96059118124eac9be7a/transformed/jetified-annotation-experimental-1.1.0/res
+com.ajinasokan.flutter_fgbg-core-1.6.0-3 /home/lenovo/.gradle/caches/transforms-3/b4ae11031c72b33523fa62fcef5e3fbc/transformed/core-1.6.0/res
+com.ajinasokan.flutter_fgbg-main-4 /home/lenovo/.pub-cache/hosted/pub.dev/flutter_fgbg-0.2.2/android/src/main/res
+com.ajinasokan.flutter_fgbg-release-5 /home/lenovo/.pub-cache/hosted/pub.dev/flutter_fgbg-0.2.2/android/src/release/res
+com.ajinasokan.flutter_fgbg-pngs-6 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_fgbg/generated/res/pngs/release
+com.ajinasokan.flutter_fgbg-resValues-7 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_fgbg/generated/res/resValues/release
+com.ajinasokan.flutter_fgbg-rs-8 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_fgbg/generated/res/rs/release
+com.ajinasokan.flutter_fgbg-mergeReleaseResources-9 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_fgbg/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.ajinasokan.flutter_fgbg-mergeReleaseResources-10 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_fgbg/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.ajinasokan.flutter_fgbg-merged_res-11 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_fgbg/intermediates/merged_res/release

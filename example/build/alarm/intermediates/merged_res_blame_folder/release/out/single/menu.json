@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.gdelataillade.alarm.alarm-merged_res-20:/menu/example_menu.xml",
+        "source": "com.gdelataillade.alarm.alarm-core-1.7.0-4:/menu/example_menu.xml"
+    },
+    {
+        "merged": "com.gdelataillade.alarm.alarm-merged_res-20:/menu/example_menu2.xml",
+        "source": "com.gdelataillade.alarm.alarm-core-1.7.0-4:/menu/example_menu2.xml"
+    }
+]

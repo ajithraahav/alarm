@@ -19,10 +19,6 @@ class _ExampleAlarmHomeScreenState extends State<ExampleAlarmHomeScreen> {
   late List<AlarmSettings> alarms;
   static StreamSubscription? subscription;
 
-  DateTime? _alarmTime;
-  late String _alarmTimeString;
-  bool _isRepeatSelected = false;
-
   @override
   void initState() {
     super.initState();
@@ -49,7 +45,7 @@ class _ExampleAlarmHomeScreenState extends State<ExampleAlarmHomeScreen> {
     loadAlarms();
   }
 
-  Future<void> navigateToAlarmScreen(AlarmSettings? settings) async {
+  Future<void> navigateToAlarmScreen(AlarmSettings? settings, ) async {
     final res = await showModalBottomSheet<bool?>(
         context: context,
         isScrollControlled: true,
@@ -61,7 +57,7 @@ class _ExampleAlarmHomeScreenState extends State<ExampleAlarmHomeScreen> {
             heightFactor: 0.65,
             child: ExampleAlarmEditScreen(alarmSettings: settings),
           );
-        });
+        }).whenComplete(() => null);
 
     if (res != null && res == true) loadAlarms();
   }
@@ -157,30 +153,6 @@ class _ExampleAlarmHomeScreenState extends State<ExampleAlarmHomeScreen> {
           ],
         ),
       ),
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.all(10),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            FloatingActionButton(
-              onPressed: () {
-                final alarmSettings = AlarmSettings(
-                  id: 42,
-                  dateTime: DateTime.now(),
-                  assetAudioPath: 'assets/alarm_tone/mozart.mp3',
-                );
-                Alarm.set(alarmSettings: alarmSettings);
-              },
-              backgroundColor: Colors.red,
-              heroTag: null,
-              child: const Text("RING NOW", textAlign: TextAlign.center),
-            ),
-          ],
-        ),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
-
-  void onSaveAlarm(a) {}
 }

@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.ryanheise.just_audio-mergeReleaseResources-14:/values-or/values-or.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/res/values-or/values-or.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,158,261,358,486",
+                        "endColumns": "102,102,96,127,134",
+                        "endOffsets": "153,256,353,481,616"
+                    }
+                },
+                {
+                    "source": "/home/lenovo/.gradle/caches/transforms-3/1f32c5f57fc180f86d1e5fe6cfe09d78/transformed/core-1.7.0/res/values-or/values-or.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "621",
+                        "endColumns": "100",
+                        "endOffsets": "717"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.ryanheise.just_audio-merged_res-16:/values-or/values-or.xml",
+            "map": [
+                {
+                    "source": "/home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/res/values-or/values-or.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,158,261,358,486",
+                        "endColumns": "102,102,96,127,134",
+                        "endOffsets": "153,256,353,481,616"
+                    }
+                },
+                {
+                    "source": "/home/lenovo/.gradle/caches/transforms-3/1f32c5f57fc180f86d1e5fe6cfe09d78/transformed/core-1.7.0/res/values-or/values-or.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "621",
+                        "endColumns": "100",
+                        "endOffsets": "717"
+                    }
+                }
+            ]
+        }
+    ]
+}

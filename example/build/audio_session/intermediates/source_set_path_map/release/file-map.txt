@@ -1,0 +1,15 @@
+com.ryanheise.audio_session-jetified-window-java-1.0.0-beta04-0 /home/lenovo/.gradle/caches/transforms-3/13f4ba9073ad3955f6b389f198634c22/transformed/jetified-window-java-1.0.0-beta04/res
+com.ryanheise.audio_session-jetified-media2-common-1.2.0-1 /home/lenovo/.gradle/caches/transforms-3/1949c5e177b4cf991a0baf3773e90cdf/transformed/jetified-media2-common-1.2.0/res
+com.ryanheise.audio_session-media-1.4.1-2 /home/lenovo/.gradle/caches/transforms-3/2cc6873dab9149d9a997abbca10088f5/transformed/media-1.4.1/res
+com.ryanheise.audio_session-jetified-media2-session-1.2.0-3 /home/lenovo/.gradle/caches/transforms-3/4a7866c6ea4019eb49b194c03f4316ae/transformed/jetified-media2-session-1.2.0/res
+com.ryanheise.audio_session-jetified-window-1.0.0-beta04-4 /home/lenovo/.gradle/caches/transforms-3/66cf4e3ddef4fa70527a905bbea4ea8e/transformed/jetified-window-1.0.0-beta04/res
+com.ryanheise.audio_session-jetified-annotation-experimental-1.1.0-5 /home/lenovo/.gradle/caches/transforms-3/8e85f8df9ffbe96059118124eac9be7a/transformed/jetified-annotation-experimental-1.1.0/res
+com.ryanheise.audio_session-core-1.6.0-6 /home/lenovo/.gradle/caches/transforms-3/b4ae11031c72b33523fa62fcef5e3fbc/transformed/core-1.6.0/res
+com.ryanheise.audio_session-main-7 /home/lenovo/.pub-cache/hosted/pub.dev/audio_session-0.1.13/android/src/main/res
+com.ryanheise.audio_session-release-8 /home/lenovo/.pub-cache/hosted/pub.dev/audio_session-0.1.13/android/src/release/res
+com.ryanheise.audio_session-pngs-9 /home/lenovo/Documents/flutter_small_app/alarm/example/build/audio_session/generated/res/pngs/release
+com.ryanheise.audio_session-resValues-10 /home/lenovo/Documents/flutter_small_app/alarm/example/build/audio_session/generated/res/resValues/release
+com.ryanheise.audio_session-rs-11 /home/lenovo/Documents/flutter_small_app/alarm/example/build/audio_session/generated/res/rs/release
+com.ryanheise.audio_session-mergeReleaseResources-12 /home/lenovo/Documents/flutter_small_app/alarm/example/build/audio_session/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.ryanheise.audio_session-mergeReleaseResources-13 /home/lenovo/Documents/flutter_small_app/alarm/example/build/audio_session/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.ryanheise.audio_session-merged_res-14 /home/lenovo/Documents/flutter_small_app/alarm/example/build/audio_session/intermediates/merged_res/release

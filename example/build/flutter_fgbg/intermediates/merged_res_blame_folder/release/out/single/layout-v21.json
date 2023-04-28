@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.ajinasokan.flutter_fgbg-merged_res-10:/layout-v21/notification_action_tombstone.xml",
+        "source": "com.ajinasokan.flutter_fgbg-core-1.6.0-3:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.ajinasokan.flutter_fgbg-merged_res-10:/layout-v21/notification_template_custom_big.xml",
+        "source": "com.ajinasokan.flutter_fgbg-core-1.6.0-3:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.ajinasokan.flutter_fgbg-merged_res-10:/layout-v21/notification_template_icon_group.xml",
+        "source": "com.ajinasokan.flutter_fgbg-core-1.6.0-3:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "com.ajinasokan.flutter_fgbg-merged_res-10:/layout-v21/notification_action.xml",
+        "source": "com.ajinasokan.flutter_fgbg-core-1.6.0-3:/layout-v21/notification_action.xml"
+    }
+]

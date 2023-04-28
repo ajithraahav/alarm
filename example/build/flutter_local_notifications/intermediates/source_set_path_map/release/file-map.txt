@@ -1,0 +1,13 @@
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-jetified-window-java-1.0.0-beta04-0 /home/lenovo/.gradle/caches/transforms-3/13f4ba9073ad3955f6b389f198634c22/transformed/jetified-window-java-1.0.0-beta04/res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-jetified-window-1.0.0-beta04-1 /home/lenovo/.gradle/caches/transforms-3/66cf4e3ddef4fa70527a905bbea4ea8e/transformed/jetified-window-1.0.0-beta04/res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-jetified-annotation-experimental-1.1.0-2 /home/lenovo/.gradle/caches/transforms-3/8e85f8df9ffbe96059118124eac9be7a/transformed/jetified-annotation-experimental-1.1.0/res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-core-1.6.0-3 /home/lenovo/.gradle/caches/transforms-3/b4ae11031c72b33523fa62fcef5e3fbc/transformed/core-1.6.0/res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-media-1.1.0-4 /home/lenovo/.gradle/caches/transforms-3/b90eb2232c50de443d141f630b7b04a2/transformed/media-1.1.0/res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-main-5 /home/lenovo/.pub-cache/hosted/pub.dev/flutter_local_notifications-13.0.0/android/src/main/res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-release-6 /home/lenovo/.pub-cache/hosted/pub.dev/flutter_local_notifications-13.0.0/android/src/release/res
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-pngs-7 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/generated/res/pngs/release
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-resValues-8 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/generated/res/resValues/release
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-rs-9 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/generated/res/rs/release
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-mergeReleaseResources-10 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-mergeReleaseResources-11 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.dexterous.flutterlocalnotifications.flutter_local_notifications-merged_res-12 /home/lenovo/Documents/flutter_small_app/alarm/example/build/flutter_local_notifications/intermediates/merged_res/release
